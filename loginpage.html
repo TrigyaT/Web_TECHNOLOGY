@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        body {
+            background-color: #f5f5f5; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width:100%;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        canvas { border: 1px solid #ccc; margin-top: 20px; }
+     h2 { text-align: center; margin-bottom: 20px; }
+      
+    </style>
+</head>
+<body>
+    <h2>LOGIN</h2>
+    <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" placeholder="First name">
+        <br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" placeholder="Last name">
+        <br>
+        <p><h2><u>Choose your requirement:</u></h2></p>
+        <input type="radio" name="requirement" value="Hospital">
+        <label for="hospital">Hospital</label><br> 
+
+        <input type="radio" name="requirement" value="School">
+        <label for="school">School</label><br>
+
+        <input type="radio" name="requirement" value="College">
+        <label for="college">College</label><br>
+
+        <input type="radio" name="requirement" value="Hotel">
+        <label for="hotel">Hotel</label><br>
+
+        <input type="radio" name="requirement" value="Restraurant">
+        <label for="restraurant">Restraurant</label><br>
+
+        
+        <label for="contact">Contact No.:</label><br>
+        <input type="number" value="contact"><br>
+
+        <label for="email">Email Id:</label><br>
+        <input type="email" value="email"> 
+    </form>
+
+    <canvas id="myCanvas" width="300" height="200"></canvas>
+    <script> var canvas = document.getElementById("myCanvas");
+     var ctx = canvas.getContext("2d");
+      ctx.beginPath(); 
+      ctx.moveTo(50, 50);
+       ctx.lineTo(200, 100);
+        ctx.stroke();
+     </script>
+</body>
+</html>
